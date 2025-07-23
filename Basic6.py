@@ -24,6 +24,7 @@ axe = 6
 i = 1
 fighting = 0
 
+#ข้าพเจ้าขออนุญาตใช้ Function เพราะพอผมไม่ใช้ผมงงแล้วมันแก้ยาก 
 def ImFighting(m_health , round):
     global i
     while m_health != 0 and i != round+1:
@@ -35,9 +36,7 @@ def ImFighting(m_health , round):
             m_health -= bow
         elif weapon == "axe":
             m_health -= axe
-        print("Monster เลิอดเหลือ:" , m_health)
-        
-        
+        print("Monster เลิอดเหลือ:" , m_health)               
 
 while fighting == 0:
     fight = int(input("ต่อสู้เลือก 1 ถ้าไม่เลือก 2:"))
