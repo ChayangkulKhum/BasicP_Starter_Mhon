@@ -37,8 +37,6 @@ def ImFighting(m_health , round):
             m_health -= axe
         print("Monster เลิอดเหลือ:" , m_health)
         
-        
-
 while fighting == 0:
     fight = int(input("ต่อสู้เลือก 1 ถ้าไม่เลือก 2:"))
     if fight == 1:
