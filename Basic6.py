@@ -16,14 +16,6 @@ while i <= x:
     print(f"ครั้งที่ {i} ได้ผล:" , sum)
     i = i + 1
 """
- 
-m_health = 50
-weapon = ""
-sword = 4
-bow = 5
-axe = 6
-i = 1
-fighting = 0
 
 m_health = 50
 sword = 4
