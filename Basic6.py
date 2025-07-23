@@ -45,11 +45,9 @@ while fighting == 0:
         round = int(input("จะตีกี่รอบ:")) 
         ImFighting(m_health, round)
         fighting = 1
-
     elif fight == 2:
         print("คุณหนีได้สำเร็จ")
         break
-    
     else:
         print("อะไรของมึงกุให้เลือก 1 กับ 2")
 
