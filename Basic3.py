@@ -21,6 +21,6 @@ else:
 
 Vat = Price * 0.07
 Total = Price + Vat
-print(Price)
-print(Vat)
-print(Total)
+print("ราคา :" , Price)
+print("ภาษี :" , Vat)
+print("ต้องจ่าย :" , Total)
