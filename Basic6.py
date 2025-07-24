@@ -22,7 +22,6 @@ sword = 4
 bow = 5
 axe = 6
 i = 1
-fighting = 0
 
 def ImFighting(m_health , round):
     global i
@@ -39,12 +38,12 @@ def ImFighting(m_health , round):
             print("พิมพ์ผิดป่าว")
         print("Monster เลิอดเหลือ:" , m_health)
         
-while fighting == 0:
+while True:
     fight = int(input("ต่อสู้เลือก 1 ถ้าไม่เลือก 2:"))
     if fight == 1:
         round = int(input("จะตีกี่รอบ:")) 
         ImFighting(m_health, round)
-        fighting = 1
+        break
     elif fight == 2:
         print("คุณหนีได้สำเร็จ")
         break
