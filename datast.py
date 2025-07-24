@@ -17,36 +17,43 @@ def check_age(user_age, age_restriction):
     else:
         return False
 
+base_price = 0
 # ฟังก์ชันคำนวณราคาตั๋วโดยขึ้นกับประเภทหนัง
 def calculate_price(base_price, genre):
     # TODO: ถ้า genre เป็น 'Action' บวกเพิ่ม 50 บาท
     # ถ้าไม่ใช่ คืนราคาเดิม
     
-    if genre == 'Action':
-    base_price += 50
+    if genre != 'Action':
+        base_price = 'tiket_price' - 50
+    else:
+        base_price == 'tiket_price'
 
 movie = input('')
 Choice = '0' 
+dub = ''
 # ฟังก์ชันสำหรับการซื้อบัตรชมหนัง
 def buy_ticket(movies):
     # TODO: 
     # 1. เรียก show_movies เพื่อแสดงรายชื่อหนัง
     show_movies(movies)
     # 2. รับค่าตัวเลือกหนังจากผู้ใช้ (1-5)
+    if movie == 'movie_name':
+        return True
     # 3. รับอายุผู้ใช้
     user_age = int(input(""))
     # 4. ตรวจสอบอายุผ่าน check_age
-    check_age(user_age, age_restriction)
+    check_age(user_age, 'age_restriction')
     #    - ถ้าไม่ผ่าน ให้แสดงข้อความว่าอายุน้อยเกินไปและ return ออกจากฟังก์ชัน
     # 5. ให้ผู้ใช้เลือกเสียงพากย์ (1 = พากย์ไทย, 2 = Soundtrack)
     print("เลือกภาษาไทยกด 1 ภาษาต้นฉบับกด 2")
     if Choice == '1':
-        print("Thai dub")
+        dub = "Thai dub"
     elif Choice == '2':
-        print("Original dub")
+        dub = "Original dub"
     # 6. คำนวณราคาตั๋วโดยใช้ calculate_price
-
+    calculate_price(base_price, 'genre')
     # 7. แสดงผลการซื้อบัตร พร้อมชื่อหนัง, เสียงที่เลือก, ราคาตั๋ว
+    print(f"ซื้อบัตรสำเร็จ {movie} , {dub} , {base_price}")
 
 
 
