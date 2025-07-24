@@ -39,19 +39,15 @@ def ImFighting(m_health , round):
             print("พิมพ์ผิดป่าว")
         print("Monster เลิอดเหลือ:" , m_health)
         
-        
-
 while fighting == 0:
     fight = int(input("ต่อสู้เลือก 1 ถ้าไม่เลือก 2:"))
     if fight == 1:
         round = int(input("จะตีกี่รอบ:")) 
         ImFighting(m_health, round)
         fighting = 1
-
     elif fight == 2:
         print("คุณหนีได้สำเร็จ")
         break
-    
     else:
         print("อะไรของมึงกุให้เลือก 1 กับ 2")
 
