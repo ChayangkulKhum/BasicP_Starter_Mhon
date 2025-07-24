@@ -21,11 +21,6 @@ m_health = 50
 sword = 4
 bow = 5
 axe = 6
-
-m_health = 50
-sword = 4
-bow = 5
-axe = 6
 i = 1
 fighting = 0
 
