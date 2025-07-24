@@ -35,6 +35,8 @@ def ImFighting(m_health , round):
             m_health -= bow
         elif weapon == "axe":
             m_health -= axe
+        else:
+            print("พิมพ์ผิดป่าว")
         print("Monster เลิอดเหลือ:" , m_health)
         
 while fighting == 0:
